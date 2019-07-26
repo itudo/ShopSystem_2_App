@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChangePwdActivity">
+
+    <com.enjoyshop.widget.EnjoyshopToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowLeftIcon="true"
+        app:title="@string/changepwd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.enjoyshop.widget.ClearEditText
+                android:id="@+id/new_pwd"
+                style="@style/editText_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_lock"
+                android:drawablePadding="20dp"
+                android:hint="请输入新密码"
+                android:inputType="textPassword" />
+
+            <com.enjoyshop.widget.ClearEditText
+                android:id="@+id/new_pwd2"
+                style="@style/editText_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_lock"
+                android:drawablePadding="20dp"
+                android:hint="请再次输入新密码"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_change"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确认找回" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

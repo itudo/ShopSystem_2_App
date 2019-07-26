@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">轻松购</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">主页</string>
+    <string name="hot">热卖</string>
+    <string name="goods">商品</string>
+    <string name="detail">详情</string>
+    <string name="review">评价</string>
+    <string name="catagory">分类</string>
+    <string name="order_1">全部订单</string>
+    <string name="order_2">带付款</string>
+    <string name="order_3">待发货</string>
+    <string name="order_4">待收货</string>
+    <string name="order_5">待评价</string>
+    <string name="order_6">已完成</string>
+    <string name="cart">购物车</string>
+    <string name="mine">我的</string>
+    <string name="title_activity_ware_detail">WareDetailActivity</string>
+    <string name="share">分享</string>
+    <string name="my_orders">我的订单</string>
+    <string name="my_center">个人中心</string>
+    <string name="my_favorite">我的收藏</string>
+    <string name="my_info">个人资料</string>
+    <string name="my_addresses">收货地址</string>
+    <string name="my_msg">我的消息</string>
+    <string name="logout">退出登录</string>
+    <string name="to_login">点击登录</string>
+    <string name="token_error">登录失效，请重新登录</string>
+    <string name="title_activity_new_order">NewOrderActivity</string>
+    <string name="title_activity_reg">RegActivity</string>
+    <string name="create_order">订单信息</string>
+    <string name="pay_result">支付结果</string>
+    <string name="add_addresses">新建收件地址</string>
+
+    <string name="code_end">请重新发送验证码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_goods_fragment">Hello goods fragment</string>
+    <string name="hello_detail_fragment">Hello detail fragment</string>
+    <string name="hello_review_fragment">Hello review fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sex">性别:</string>
+    <string name="name">用户名:</string>
+    <string name="tel">手机号:</string>
+    <string name="idcard">身份证:</string>
+    <string name="email">邮箱:</string>
+    <string name="changepwd">修改密码</string>
+
+    <string name="reviewCenter">发表评价</string>
+
+    <string name="label_cancel">取消</string>
+    <string name="label_ok">确定</string>
+    <string name="permission_title_rationale">权限需求</string>
+    <string name="permission_read_storage_rationale">选择图片时需要读取权限</string>
+    <string name="permission_write_storage_rationale">拍照时需要存储权限</string>
+
+</resources>

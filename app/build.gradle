@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+android {
+    signingConfigs {
+        release {
+            keyAlias 'enjoyshop'
+            keyPassword '123456'
+            storeFile file('../enjoyshop.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.enjoyshop"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 24
+        versionName "2.1.0"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    greendao {
+        schemaVersion 1  //版本
+        daoPackage 'com.enjoyshop.data.dao' // 一般为app包名+生成文件的文件夹名
+        targetGenDir 'src/main/java' //生成文件路径
+    }
+    buildToolsVersion '27.0.3'
+}
+
+repositories {
+    flatDir {
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    compileOnly 'org.projectlombok:lombok:1.16.18'
+    compileOnly 'javax.annotation:javax.annotation-api:1.3.1'
+    annotationProcessor 'org.projectlombok:lombok:1.16.18'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.zhy:okhttputils:2.6.2'
+    //轮播图.
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //下拉刷新
+    implementation 'com.cjj.materialrefeshlayout:library:1.3.0'
+    //黄油刀
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //数据库
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+    //批量处理权限的库
+    implementation 'com.mylhyl:acp:1.1.7'
+    //自定义样式的dialog
+    implementation 'com.github.d-max:spots-dialog:0.4@aar'
+    //三级联动
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //沉浸式状态栏
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //跑马灯view
+    implementation 'com.sunfusheng:marqueeview:1.3.3'
+    //recyclerviewhelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
+    implementation files('libs/MobCommons-2017.0801.1522.jar')
+    implementation files('libs/MobTools-2017.0801.1522.jar')
+    implementation files('libs/ShareSDK-Core-3.0.1.jar')
+    implementation files('libs/ShareSDK-QQ-3.0.1.jar')
+    implementation files('libs/ShareSDK-QZone-3.0.1.jar')
+    implementation files('libs/ShareSDK-SinaWeibo-3.0.1.jar')
+    implementation files('libs/ShareSDK-TencentWeibo-3.0.1.jar')
+    implementation files('libs/ShareSDK-Wechat-3.0.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Core-3.0.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Favorite-3.0.1.jar')
+    implementation files('libs/ShareSDK-Wechat-Moments-3.0.1.jar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+    implementation files('libs/volley.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.zxing:core:3.3.0'
+
+    // 图像剪切
+    implementation('com.kevin:crop:1.0.2') {
+        // 如果已经引入 support:appcompat-v7 可以加上这句话
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+}

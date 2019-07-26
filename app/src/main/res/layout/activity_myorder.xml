@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.enjoyshop.widget.EnjoyshopToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowLeftIcon="true"
+        app:title="我的订单" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+                    android:id="@+id/order_group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/order_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_icon_1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:tag="10"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/order_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_icon_2"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:tag="0"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/order_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_icon_3"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:tag="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/order_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_icon_4"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:tag="2"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/order_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_icon_5"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:tag="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.0sp" />
+
+                    <RadioButton
+                        android:id="@+id/order_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_icon_6"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:tag="4"
+                        android:textColor="@android:color/black"
+                        android:textSize="17.0sp" />
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+
+                >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
