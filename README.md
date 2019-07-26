@@ -1,4 +1,5 @@
-声明： 由于本人是java后端开发，此APP端界面均采用他人代码，只是对其中的接口调用部分以及部分界面有所改动。原项目GitHub地址：https://github.com/gaolhjy/enjoyshop
+声明： 由于本人是java后端开发，此APP端界面均采用他人代码，只是将其中的接口调用都改为了我的服务器的接口调用，以及修改了一adapter来适应我的返回数据。
+原项目GitHub地址：https://github.com/gaolhjy/enjoyshop
 
 项目名称：淘宝贝电子商务平台App器(2018.8-2018.9) (1)开发技术：Spring，SpringMVC，Mybatis，Spring Cloud相关组件， Mysql，Redis，Jquery，Ajax，Jstl/EL，lombok (2)项目描述：基于SpringCloud微服务架构的B2C电子商务系统，主要分为用户服务
 
