@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:hint="请输入常用手机号码"
                 android:inputType="phone"
-                android:text="17535434475" />
+                android:text="xxxxxxxxxxx" />
         </LinearLayout>
 
         <include layout="@layout/include_line_horizontal" />
@@ -224,7 +224,7 @@
                 android:layout_weight="1"
                 android:hint="请输入身份证号"
                 android:inputType="number"
-                android:text="140926199611200015" />
+                android:text="xxxxxxxxxxxxxxxxxx" />
         </LinearLayout>
 
         <include layout="@layout/include_line_horizontal" />
@@ -255,7 +255,7 @@
                 android:layout_weight="1"
                 android:hint="请输入您的邮箱"
                 android:inputType="textWebEmailAddress|number"
-                android:text="1127437849@qq.com" />
+                android:text="xxxxxxxxxx@qq.com" />
         </LinearLayout>
     </LinearLayout>
 
